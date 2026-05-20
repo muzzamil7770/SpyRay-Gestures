@@ -1,0 +1,64 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# Aether Gesture Engine — .gitignore
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyo
+*.pyc
+.Python
+
+# ── Virtual Environments ───────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── PyInstaller Build Artifacts ────────────────────────────────────────────
+build/
+dist/
+*.spec
+
+# ── IDE / Editor ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# ── OS Generated ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ── MediaPipe Model Files (large binaries — download at runtime) ──────────
+*.task
+*.tflite
+
+# ── AI Training Data & Saved Models ────────────────────────────────────────
+gesture_data/
+saved_models/
+*.h5
+*.onnx
+
+# ── Application Config (user-specific settings) ───────────────────────────
+config.yaml
+config.json
+
+# ── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Misc ───────────────────────────────────────────────────────────────────
+*.egg-info/
+.eggs/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
